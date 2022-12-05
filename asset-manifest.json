@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-js-ecommerce-krykewych/static/css/main.3e18a1b8.css",
+    "main.js": "/react-js-ecommerce-krykewych/static/js/main.c2a73aba.js",
+    "static/media/mani-sin-sal.png": "/react-js-ecommerce-krykewych/static/media/mani-sin-sal.b69a7b9ea3bddeadd8d2.png",
+    "static/media/pasas.jpg": "/react-js-ecommerce-krykewych/static/media/pasas.1c293cb4770676c49068.jpg",
+    "static/media/alcaparras.jpg": "/react-js-ecommerce-krykewych/static/media/alcaparras.ecf5975a5fe9dd000e6a.jpg",
+    "static/media/aceitunas-negras.jpg": "/react-js-ecommerce-krykewych/static/media/aceitunas-negras.cf8855bd0970233be365.jpg",
+    "static/media/avellanas.jpg": "/react-js-ecommerce-krykewych/static/media/avellanas.d11b1ecd2745d5590c4b.jpg",
+    "static/media/ciruelas-pasas.jpg": "/react-js-ecommerce-krykewych/static/media/ciruelas-pasas.cbc760b2fb7f42ef2fc3.jpg",
+    "static/media/mani-salado.jpg": "/react-js-ecommerce-krykewych/static/media/mani-salado.bfef80450c6588736491.jpg",
+    "static/media/nueces-descascaradas.jpg": "/react-js-ecommerce-krykewych/static/media/nueces-descascaradas.1e87a27e139bee18d254.jpg",
+    "static/media/nueces-con-cascara.jpg": "/react-js-ecommerce-krykewych/static/media/nueces-con-cascara.009f72c8006bbadf9042.jpg",
+    "static/media/almendras.jpg": "/react-js-ecommerce-krykewych/static/media/almendras.82c180f492d2a83a03f4.jpg",
+    "static/media/pepinillos.jpg": "/react-js-ecommerce-krykewych/static/media/pepinillos.fb1d6708bdc850e1103e.jpg",
+    "static/media/mani-cascara.jpg": "/react-js-ecommerce-krykewych/static/media/mani-cascara.f6562be4c9539483babe.jpg",
+    "static/media/aceitunas-verdes.jpg": "/react-js-ecommerce-krykewych/static/media/aceitunas-verdes.fb1dd483186b90061c79.jpg",
+    "index.html": "/react-js-ecommerce-krykewych/index.html",
+    "main.3e18a1b8.css.map": "/react-js-ecommerce-krykewych/static/css/main.3e18a1b8.css.map",
+    "main.c2a73aba.js.map": "/react-js-ecommerce-krykewych/static/js/main.c2a73aba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e18a1b8.css",
+    "static/js/main.c2a73aba.js"
+  ]
+}
