@@ -1,0 +1,13 @@
+.item {
+  width: 280px;
+  background-color: rgba(230, 230, 230, 0.8);
+  padding: 20px;
+  border-radius: 20px;
+}
+.item > a {
+  display: block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  color: #fff;
+}

@@ -5,9 +5,10 @@
   grid-template-columns: 2fr 3fr 2fr;
   align-items: center;
 }
-.navbar-brand {
+.navbar-brand > a {
   font-size: 30px;
   line-height: 33px;
+  color: #fff;
 }
 .navbar-options {
   display: flex;
