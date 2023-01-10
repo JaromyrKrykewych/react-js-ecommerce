@@ -1,27 +1,24 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { products } from "../../data/products";
 import ItemDetails from "../ItemDetails/ItemDetails";
 import { ClipLoader } from "react-spinners";
+import { doc, getDoc, getFirestore } from "firebase/firestore";
 
 const ItemDetailContainer = () => {
   const [item, setItem] = useState({});
   const [loading, setLoading] = useState(true);
   const { id } = useParams();
   useEffect(() => {
-    let product;
-    let promise = new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(products);
-      }, 2000);
-    });
-    promise.then((products) => {
-      product = products.find(
-        (product) => product.id.toString() === id.toString()
-      );
-      setLoading(false);
-      setItem(product);
-    });
+    const db = getFirestore()
+
+    const itemRef = doc(db, 'products', id)
+    getDoc(itemRef).then((snapshot) => {
+      if (snapshot.exists()) {
+        setItem({ id: snapshot.id, ...snapshot.data()})
+        setLoading(false)
+      }
+    })
+    
   }, [id]);
   return (
     <>

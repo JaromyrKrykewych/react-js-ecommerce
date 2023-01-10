@@ -18,7 +18,7 @@ const ItemListFilter = ({items}) => {
 
   return (
     <>
-      <ItemList items={newItems} />
+      {category !== undefined ? <ItemList items={newItems} /> : <ItemList items={items} />} 
     </>
   )
 }

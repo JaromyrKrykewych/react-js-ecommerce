@@ -1,13 +1,20 @@
-import * as Unicons from '@iconscout/react-unicons'
-import './cartwidget.css'
+import * as Unicons from "@iconscout/react-unicons";
+import { useContext } from "react";
+import { CartContex } from "../../context/CartProvider";
+import { Link } from "react-router-dom";
+import "./cartwidget.css";
 
 const CartWidget = () => {
-  return (
-    <div className='cartwidget'>
-      <Unicons.UilShoppingCart color='#fff' />
-      <span className='cartwidget-count'>0</span>
-    </div>
-  )
-}
+  const { totalProducts } = useContext(CartContex)
 
-export default CartWidget
+  return (
+    <div className="cartwidget">
+      <Link to={'/carrito'}>
+        <Unicons.UilShoppingCart color="#fff" />
+      </Link>
+      <span className="cartwidget-count">{totalProducts()}</span>
+    </div>
+  );
+};
+
+export default CartWidget;

@@ -1,13 +1,36 @@
 .item {
-  width: 280px;
-  background-color: rgba(230, 230, 230, 0.8);
+  width: 200px;
+  background-color: rgba(144, 184, 230, 0.8);
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-.item > a {
+.item > div {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin: 0 auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item > div > img {
+  width: 145px;
+  height: 145px;
+  border-radius: 10px;
+}
+.item > h3, p {
+  text-align: center;
+}
+.item > a > button {
   display: block;
-  width: inherit;
-  height: inherit;
-  border-radius: inherit;
-  color: #fff;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 5px;
+  cursor: pointer;
 }

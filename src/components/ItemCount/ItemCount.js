@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import "./itemcount.css";
 
-const ItemCount = ({ stockValue }) => {
+const ItemCount = ({ stockValue, onAdd }) => {
   const [contador, setContador] = useState(0);
   const [stock, setStock] = useState(0);
 
@@ -26,16 +26,19 @@ const ItemCount = ({ stockValue }) => {
   };
   const handleValue = (e) => setContador(e.target.value);
   return (
-    <form className="item-count" onSubmit={(e) => e.preventDefault()}>
-      <button onClick={minusItem}>-</button>
-      <input
-        type="number"
-        onChange={handleValue}
-        placeholder={contador}
-        max={stockValue}
-      />
-      <button onClick={plusItem}>+</button>
-    </form>
+    <>
+      <div className="item-count">
+        <button onClick={minusItem}>-</button>
+        <input
+          type="number"
+          onChange={handleValue}
+          placeholder={contador}
+          max={stockValue}
+        />
+        <button onClick={plusItem}>+</button>
+      </div>
+      <button onClick={() => onAdd(contador)}>Agregar a carrito</button>
+    </>
   );
 };
 
