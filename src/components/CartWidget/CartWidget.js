@@ -5,14 +5,16 @@ import { Link } from "react-router-dom";
 import "./cartwidget.css";
 
 const CartWidget = () => {
-  const { totalProducts } = useContext(CartContex)
+  const { totalProducts } = useContext(CartContex);
 
   return (
     <div className="cartwidget">
-      <Link to={'/carrito'}>
+      <Link to={"/carrito"}>
         <Unicons.UilShoppingCart color="#fff" />
       </Link>
-      <span className="cartwidget-count">{totalProducts()}</span>
+      {totalProducts() !== 0 && (
+        <span className="cartwidget-count">{totalProducts()}</span>
+      )}
     </div>
   );
 };

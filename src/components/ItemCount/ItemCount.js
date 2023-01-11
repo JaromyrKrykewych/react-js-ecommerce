@@ -9,7 +9,7 @@ const ItemCount = ({ stockValue, onAdd }) => {
   useEffect(() => {
     setTimeout(() => {
       setStock(stockValue);
-    }, 2000);
+    }, 1000);
   }, [stockValue]);
 
   const plusItem = () => {
