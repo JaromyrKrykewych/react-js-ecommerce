@@ -9,7 +9,7 @@ En este proyecto se utilizaron las siguientes dependencias de trabajo:
 - [React Router Dom](https://reactrouter.com/en/main): Dependencia usada para el manejo de rutas y navegación dentro de la aplicación web
 - [React Spinners](https://www.npmjs.com/package/react-spinners): Dependencia que ofrece componentes de carga para implementar cada vez que hacemos una llamada a un servidor externo mediante una promesa.
 - [Unicons Iconscout](https://iconscout.com/unicons): Libreria de iconos que se pueden importar como componentes.
--[Firebase](https://firebase.google.com/?hl=es): Plataforma que cuenta con Base de datos para almacenar información
+- [Firebase](https://firebase.google.com/?hl=es): Plataforma que cuenta con Base de datos para almacenar información
 
 ~~~
   "dependencies": {
@@ -73,17 +73,17 @@ Procedemos a configurar las rutas y componentes de ruta donde mostraremos nuestr
 
 Estos componentes de Ruta tendrán Componentes Contenedores donde manejaremos la lógica de nuestros componentes y haremos las llamadas necesarias para la obtención de datos, algunos de estos son:
 
-* <ItemListContainer />
-* <ItemDetailContainer />
-* <Cart />
-* <Checkout>
+* ItemListContainer
+* ItemDetailContainer
+* Cart
+* Checkout
 
 Luego tenemos los Componentes Presentacionales que contiene la información de los elementos que queremos mostrar, algunos de estos son:
 
-* <ItemList />
-* <Item />
-* <CartWidget />
-* <CartItems />
+* ItemList
+* Item
+* CartWidget
+* CartItems
   
 ## Base de Datos
 
