@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# E-commerse - Tienda de Nutrición
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+El siguiente es un proyecto e-commerse básado en una tienda de alimentos saludables de venta por peso (100gr x unidad) realizada con la libreria de: [React JS](https://es.reactjs.org/). y alojada a través de Git Hub Pages con el siguiente link: [Tienda de Nutrición](https://jaromyrkrykewych.github.io/).
 
-## Available Scripts
+## Dependencias
 
-In the project directory, you can run:
+En este proyecto se utilizaron las siguientes dependencias de trabajo:
 
-### `npm start`
+-[React Router Dom](https://reactrouter.com/en/main): Dependencia usada para el manejo de rutas y navegación dentro de la aplicación web
+-[React Spinners](https://www.npmjs.com/package/react-spinners): Dependencia que ofrece componentes de carga para implementar cada vez que hacemos una llamada a un servidor externo mediante una promesa.
+-[Unicons Iconscout](https://iconscout.com/unicons): Libreria de iconos que se pueden importar como componentes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+~~~
+"dependencies": {
+    "@iconscout/react-unicons": "^1.1.6",
+    "firebase": "^9.15.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.4",
+    "react-spinners": "^0.13.7",
+  },
+~~~
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Dependencias de desarrollo
 
-### `npm test`
+-[GitHub Pages](https://pages.github.com/): Como hemos comentado alojamos la aplicación web con GitHub Pages instalando la dependencia, agregando nuestro repositorio de GitHub en el package.json *"homepage": "https://JaromyrKrykewych.github.io/react-js-ecommerce-krykewych"* y agregando los siguientes scripts en el documento:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+~~~
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+~~~
 
-### `npm run build`
+## Estructura de nuestra aplicación web
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
