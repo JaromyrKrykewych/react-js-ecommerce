@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-js-ecommerce-krykewych/static/css/main.72211e3e.css",
-    "main.js": "/react-js-ecommerce-krykewych/static/js/main.e2d1499f.js",
+    "main.js": "/react-js-ecommerce-krykewych/static/js/main.03255334.js",
     "index.html": "/react-js-ecommerce-krykewych/index.html",
     "main.72211e3e.css.map": "/react-js-ecommerce-krykewych/static/css/main.72211e3e.css.map",
-    "main.e2d1499f.js.map": "/react-js-ecommerce-krykewych/static/js/main.e2d1499f.js.map"
+    "main.03255334.js.map": "/react-js-ecommerce-krykewych/static/js/main.03255334.js.map"
   },
   "entrypoints": [
     "static/css/main.72211e3e.css",
-    "static/js/main.e2d1499f.js"
+    "static/js/main.03255334.js"
   ]
 }
