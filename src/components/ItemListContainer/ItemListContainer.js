@@ -1,26 +1,43 @@
 import "./itemlistcontainer.css";
 import { useEffect, useState } from "react";
-import ItemListFilter from "../ItemListFilter/ItemListFilter";
+import ItemList from "../ItemList/ItemList";
 import { ClipLoader } from "react-spinners";
-import { collection, getDocs, getFirestore } from "firebase/firestore";
+import { collection, getDocs, getFirestore, query, where } from "firebase/firestore";
+import { useParams } from 'react-router-dom';
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
+  const {category}  = useParams()
+  
   useEffect(() => {
+    setLoading(true)
     const db = getFirestore()
-
     const itemsCollection = collection(db, 'products')
 
-    getDocs(itemsCollection).then(snapshot => {
-      const items = snapshot.docs.map((item) => ({
-        id: item.id,
-        ...item.data()
-      }))
-      setItems(items)
-      setLoading(false)
-    })
-  }, []);
+    if (typeof category !== 'undefined') {
+      
+      const q = query(itemsCollection, where('category', '==', category.split('-').join(' ')))
+
+      getDocs(q).then(snapshot => {
+        const items = snapshot.docs.map((item) => ({
+          id: item.id,
+          ...item.data()
+        }))
+        setItems(items)
+        setLoading(false)  
+      })        
+    } else {
+      getDocs(itemsCollection).then(snapshot => {
+        const items = snapshot.docs.map((item) => ({
+          id: item.id,
+          ...item.data()
+        }))
+        setItems(items)
+        setLoading(false)
+      })  
+    }
+  }, [category]);
 
   return (
     <div className="item-list-container">
@@ -31,7 +48,7 @@ const ItemListContainer = () => {
           <ClipLoader color="#ffffff" />
         </div>
       ) : (
-        <ItemListFilter items={items} />
+        <ItemList items={items} />
       )}
     </div>
   );
